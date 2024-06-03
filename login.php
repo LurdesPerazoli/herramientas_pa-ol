@@ -22,7 +22,7 @@
 
   <div class="mb-3">
     <img src="img/usuario.png"><label for="exampleInputEmail1" class="form-label"> Usuario </label>
-    <input  type="text" name="usuario" class="form-control" aria-describedby="emailHelp">
+    <input  type="text" name="id_usuario" class="form-control" aria-describedby="emailHelp">
     
   </div>
 
