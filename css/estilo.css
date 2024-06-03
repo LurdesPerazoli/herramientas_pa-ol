@@ -1,0 +1,13 @@
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+  
+}
+
+*{
+	font-family: arial black;
+	background: black;
+	color: white;
+}
