@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 <div class="container mt-5">
     <h1>Panel de Administración</h1>
     <div class="btn-group-vertical mt-3">
-        <a href="agregar_herramienta.php" class="btn btn-primary mb-2">Agregar</a>
-        <a href="buscar_herramienta.php" class="btn btn-secondary mb-2">Buscar</a>
-        <a href="modificar_herramienta.php" class="btn btn-warning mb-2">Modificar</a>
-        <a href="eliminar_herramienta.php" class="btn btn-danger mb-2">Eliminar</a>
+        <a href="agregar_herramienta.htm" class="btn btn-dark mb-2">Agregar</a>
+        <a href="buscar_herramienta.php" class="btn btn-dark mb-2">Buscar</a>
+        <a href="modificar_herramienta.php" class="btn btn-dark mb-2">Modificar</a>
+        <a href="eliminar_herramienta.php" class="btn btn-dark mb-2">Eliminar</a>
     </div>
     <a href="logout.php" class="btn btn-dark mt-3">Cerrar Sesión</a>
 </div>
