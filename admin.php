@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-<div class="container mt-5">
-    <h1>Panel de Administración</h1>
-    <div class="btn-group-vertical mt-3">
+<div class="container mt-6">
+    <h1><center>Panel de Administración</center></h1>
+    <div id="contenedor">
+    <div class="btn-group-vertical mt-6">
         <a href="agregar_herramienta.htm" class="btn btn-dark mb-2">Agregar</a>
         <a href="buscar_herramienta.php" class="btn btn-dark mb-2">Buscar</a>
         <a href="modificar_herramienta.php" class="btn btn-dark mb-2">Modificar</a>
         <a href="eliminar_herramienta.php" class="btn btn-dark mb-2">Eliminar</a>
+        <a href="logout.php" class="btn btn-dark mb-2">Cerrar Sesión</a>
     </div>
-    <a href="logout.php" class="btn btn-dark mt-3">Cerrar Sesión</a>
+    
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
