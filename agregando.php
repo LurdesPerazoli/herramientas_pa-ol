@@ -10,7 +10,7 @@ include("conexion.php");
  $descripcion=$_POST['descripcion'];
  $cantidad_disponible=$_POST['cantidad_disponible'];
 
- $sql="INSERT INTO herramientas VALUES ('$descripcion','$cantidad_disponible)";
+ $sql="INSERT INTO herramientas (descripcion, cantidad_disponible) VALUES ('$descripcion','$cantidad_disponible')";
 
 if ($conn->query($sql) === TRUE) {
    echo "<center>Herramienta insertada </center>";
