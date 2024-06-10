@@ -14,6 +14,7 @@
     <div id="contenedor">
     <div class="btn-group-vertical mt-6">
         <a href="agregar_herramienta.htm" class="btn btn-dark mb-2">Agregar</a>
+         <a href="inventario.php" class="btn btn-dark mb-2">Inventario de Herramientas</a>
         <a href="buscar_herramienta.php" class="btn btn-dark mb-2">Buscar</a>
         <a href="modificar_herramienta.php" class="btn btn-dark mb-2">Modificar</a>
         <a href="eliminar_herramienta.php" class="btn btn-dark mb-2">Eliminar</a>
