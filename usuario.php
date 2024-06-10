@@ -13,7 +13,7 @@
     <h1>Panel de Usuario</h1>
     <div class="btn-group-vertical mt-3">
      
-        <a href="buscar_herramienta.php" class="btn btn-dark">Buscar</a>
+        <a href="buscador.php" class="btn btn-dark">Buscar</a>
         
         <a href="transaccion.php" class="btn btn-dark">Realizar transaccion</a>
         
