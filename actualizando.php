@@ -1,18 +1,18 @@
 <?php
 
 include("conexion.php");
-$id_herramientas=$_POST['id_herramientas'];
+$id_herramienta=$_POST['id_herramienta'];
 $descripcion=$_POST['descripcion'];
 $cantidad_disponible=$_POST['cantidad_disponible'];
 
-$sql = "SELECT * FROM herramientas where id_herramientas = '$id_herramientas'";
+$sql = "SELECT * FROM herramientas where id_herramienta = '$id_herramienta'";
 
 $consulta=mysqli_query($conn,$sql);
 $cuantos=mysqli_num_rows($consulta);
 
 if($cuantos>0)
 {
-	$sql2 = "UPDATE herramientas SET cantidad_disponible='$cantidad_disponible'  WHERE id_herramientas='$id_herramientas'";
+	$sql2 = "UPDATE herramientas SET cantidad_disponible='$cantidad_disponible'  WHERE id_herramienta='$id_herramienta'";
 	$consulta2 = mysqli_query($conn,$sql2);
 	if($consulta2)
 	{

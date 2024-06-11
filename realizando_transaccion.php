@@ -21,7 +21,7 @@ echo "Transaccion realizada";
 
 if($consulta)
 {
-	$sql2 = "UPDATE herramientas SET cantidad_disponible='cantidad_disponible' - '$cantidad' WHERE id_herramientas='$id_herramienta'";
+	$sql2 = "UPDATE herramientas SET cantidad_disponible='cantidad_disponible' - '$cantidad' WHERE id_herramienta='$id_herramienta'";
 	mysqli_query($conn,$sql2);
 
 

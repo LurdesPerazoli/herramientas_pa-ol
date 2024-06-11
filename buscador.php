@@ -27,7 +27,7 @@ if (!$result) {
         <input type="submit" value="Buscar">
     </form>
     <label for="herramientas">Seleccione una herramienta:</label>
-    <select id="herramientas" name="herramientas">
+    <select id="id_herramienta" name="id_herramienta">
         <?php
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {

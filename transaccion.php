@@ -12,9 +12,37 @@
     
 </header>
 
-		<form action="realizando_transaccion.php" method="post">
+		<form action="realizando_transaccion.php" method="post" >
 			<p><h1>Complete los datos</h1></p>
-			Id de la Herramienta solicitada<input type="number" name="id_herramienta">
+			<label for="herramientas">Seleccione una herramienta:</label>
+        <select id="id_herramienta" name="id_herramienta">
+        <?php
+        include 'conexion.php';
+
+        $busqueda = "";
+     if (isset($_GET['busqueda'])) {
+    $busqueda = $conn->real_escape_string($_GET['search']);
+     }
+
+     $sql = "SELECT id_herramienta, descripcion, cantidad_disponible FROM herramientas WHERE descripcion LIKE '%$busqueda%'";
+     $result = $conn->query($sql);
+
+    if (!$result) {
+    die("Error en la consulta: " . $conn->error);
+    }
+
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo "<option value='" . htmlspecialchars($row["descripcion"]) . "'>";
+                echo htmlspecialchars($row["descripcion"]) . " - Cantidad: " . htmlspecialchars($row["cantidad_disponible"]). " - Id herramienta: " . htmlspecialchars($row["id_herramienta"]);
+                echo "</option>";
+            }
+        } else {
+            echo "<option value=''>No se encontraron herramientas</option>";
+        }
+        ?>
+    </select>
+			
 			<br>
 			Cantidad a retirar <input type="number" name="cantidad">
 			<br>

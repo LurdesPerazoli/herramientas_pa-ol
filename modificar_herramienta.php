@@ -12,7 +12,7 @@
 				<form action="actualizando.php" method="post">
 				<p><h1>Modificar herramienta</h1></p>
 
-				ID Herramienta <input type="number" name="id_herramientas">
+				ID Herramienta <input type="number" name="id_herramienta">
 				<br>
 				Descripcion <input type="text" name="descripcion">
 				<br>

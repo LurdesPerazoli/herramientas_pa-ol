@@ -8,7 +8,7 @@ if ($conn->connect_error) {
   
 } 
 
-$sql = "SELECT id_herramientas,descripcion, cantidad_disponible  FROM herramientas";
+$sql = "SELECT id_herramienta,descripcion, cantidad_disponible  FROM herramientas";
 $result = $conn->query($sql);
 
 
@@ -21,13 +21,13 @@ if ($result->num_rows > 0) {
     echo"</center></div>";
     while($row = $result->fetch_assoc()) {
         // Imprimir los datos de cada fila
-        //echo" ID_Herramienta:  ".$row["id_herramientas"]." Descripcion:  ".$row["descripcion"]."  Disponible:  ".$row["cantidad_disponible"]."<br>";
+        //echo" ID_Herramienta:  ".$row["id_herramienta"]." Descripcion:  ".$row["descripcion"]."  Disponible:  ".$row["cantidad_disponible"]."<br>";
     echo"<div class='tabla' >";
     echo"<center>";
     echo"<table class='table table-columns table-sm' border=3>";
     echo"<tbody>";
     echo"<tr>";
-    echo"<td>ID_Herramienta:  ".$row["id_herramientas"]."</td> ";
+    echo"<td>ID_Herramienta:  ".$row["id_herramienta"]."</td> ";
     echo"</tr>";
     echo"<tr>";
     echo"<td> Descripcion:  ".$row["descripcion"]."</td>";
